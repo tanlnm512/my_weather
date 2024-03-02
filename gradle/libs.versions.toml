@@ -1,0 +1,144 @@
+[versions]
+agp = "8.3.0"
+kotlin = "1.9.0"
+ksp-ver = "1.9.0-1.0.13"
+secrets-gradle-plugin-ver = "2.0.1"
+navigation-safe-args-ver = "2.7.7"
+
+core-ktx-ver = "1.12.0"
+activity-ktx-ver = "1.8.2"
+fragment-ktx-ver = "1.6.2"
+collection-ktx-ver = "1.4.0"
+palette-ktx-ver = "1.0.0"
+preference-ktx-ver = "1.2.1"
+
+annotation-ver = "1.7.1"
+appcompat-ver = "1.6.1"
+material-ver = "1.11.0"
+swipe-refresh-ver = "1.1.0"
+recyclerview-ver = "1.3.2"
+coordinatorlayout-ver = "1.2.0"
+constraintlayout-ver = "2.1.4"
+startup-ver = "1.1.1"
+splashscreen-ver = "1.0.1"
+
+datastore-preferences-ver = "1.0.0"
+
+lifecycle-ver = "2.7.0"
+work-ver = "2.9.0"
+room-ver = "2.6.1"
+nav-ver = "2.7.7"
+coroutines-ver = "1.8.0"
+
+hilt-ver = "2.51"
+hilt-navigation-fragment-ver = "1.2.0"
+hilt-work-ver = "1.2.0"
+hilt-compiler-ver = "1.2.0"
+
+retrofit-ver = "2.9.0"
+okhttp-ver = "4.12.0"
+
+coil-ver = "2.6.0"
+gson-ver = "2.10.1"
+timber-ver = "5.0.1"
+insetter-ver = "0.6.1"
+lottie-ver = "6.1.0"
+
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+
+[plugins]
+com-android-application = { id = "com.android.application", version.ref = "agp" }
+com-android-library = { id = "com.android.library", version.ref = "agp" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+org-jetbrains-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+org-jetbrains-kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp-ver" }
+secrets-gradle-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets-gradle-plugin-ver" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt-ver" }
+navigation-safe-args = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigation-safe-args-ver" }
+
+[libraries]
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx-ver" }
+activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity-ktx-ver" }
+fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment-ktx-ver" }
+collection-ktx = { group = "androidx.collection", name = "collection-ktx", version.ref = "collection-ktx-ver" }
+palette-ktx = { group = "androidx.palette", name = "palette-ktx", version.ref = "palette-ktx-ver" }
+preference-ktx = { group = "androidx.preference", name = "preference-ktx", version.ref = "preference-ktx-ver" }
+
+annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation-ver" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat-ver" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material-ver" }
+swipe-refresh = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swipe-refresh-ver" }
+recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview-ver" }
+coordinator-layout = { group = "androidx.coordinatorlayout", name = "coordinatorlayout", version.ref = "coordinatorlayout-ver" }
+constraint-layout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout-ver" }
+startup = { group = "androidx.startup", name = "startup-runtime", version.ref = "startup-ver" }
+splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashscreen-ver" }
+datastore-preference = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore-preferences-ver" }
+
+livedata-core-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-core-ktx", version.ref = "lifecycle-ver" }
+livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle-ver" }
+viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle-ver" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-ver" }
+lifecycle-service = { group = "androidx.lifecycle", name = "lifecycle-service", version.ref = "lifecycle-ver" }
+lifecycle-process = { group = "androidx.lifecycle", name = "lifecycle-process", version.ref = "lifecycle-ver" }
+lifecycle-compiler = { group = "androidx.lifecycle", name = "lifecycle-compiler", version.ref = "lifecycle-ver" }
+
+work-runtime = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "work-ver" }
+work-multiprocess = { group = "androidx.work", name = "work-multiprocess", version.ref = "work-ver" }
+
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room-ver" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room-ver" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room-ver" }
+
+nav-runtime = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "nav-ver" }
+nav-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "nav-ver" }
+nav-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "nav-ver" }
+nav-feature = { group = "androidx.navigation", name = "navigation-dynamic-features-fragment", version.ref = "nav-ver" }
+
+coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines-ver" }
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines-ver" }
+
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt-ver" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt-ver" }
+hilt-navigation-fragment = { group = "androidx.hilt", name = "hilt-navigation-fragment", version.ref = "hilt-navigation-fragment-ver" }
+hilt-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "hilt-work-ver" }
+hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hilt-compiler-ver" }
+
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit-ver" }
+retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit-ver" }
+
+okhttp-bom = { group = "com.squareup.okhttp3", name = "okhttp-bom", version.ref = "okhttp-ver" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp" }
+okhttp-url-connection = { group = "com.squareup.okhttp3", name = "okhttp-urlconnection" }
+okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor" }
+
+coil = { group = "io.coil-kt", name = "coil", version.ref = "coil-ver" }
+coil-svg = { group = "io.coil-kt", name = "coil-svg", version.ref = "coil-ver" }
+
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson-ver" }
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber-ver" }
+
+insertter = { group = "dev.chrisbanes.insetter", name = "insetter", version.ref = "insetter-ver" }
+insertter-dbx = { group = "dev.chrisbanes.insetter", name = "insetter-dbx", version.ref = "insetter-ver" }
+
+lottie = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie-ver" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+
+[bundles]
+android-extension = ["core-ktx", "activity-ktx", "fragment-ktx", "collection-ktx", "palette-ktx", "preference-ktx"]
+android-support = ["annotation", "appcompat", "material", "swipe-refresh", "recyclerview", "coordinator-layout", "constraint-layout", "startup", "splashscreen", "datastore-preference"]
+lifecycle = ["livedata-core-ktx", "livedata-ktx", "viewmodel-ktx", "lifecycle-runtime-ktx", "lifecycle-service", "lifecycle-process", "coroutines-core", "coroutines-android"]
+work = ["work-runtime", "work-multiprocess"]
+room = ["room-runtime", "room-ktx"]
+navigation = ["nav-runtime", "nav-fragment", "nav-ui", "nav-feature"]
+hilt = ["hilt-android", "hilt-navigation-fragment", "hilt-work"]
+hilt-compiler = ["hilt-android-compiler", "hilt-compiler"]
+retrofit = ["retrofit", "retrofit-converter-gson"]
+okhttp = ["okhttp", "okhttp-url-connection", "okhttp-logging-interceptor"]
+coil = ["coil", "coil-svg"]
