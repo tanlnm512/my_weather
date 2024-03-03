@@ -20,6 +20,8 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField(type = "String", name = "API_KEY", value = "\"4d0cfc63d420549403c4cdb5758374a9\"")
+        buildConfigField(type = "String", name = "BASE_API_URL", value = "\"https://api.openweathermap.org/\"")
     }
 
     buildTypes {
@@ -50,6 +52,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 
     packaging {

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--region TextView-->
+    <style name="AppText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/text_regular</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="AppText.Regular" parent="AppText">
+        <item name="android:fontFamily">@font/noto_sans_regular</item>
+    </style>
+
+    <style name="AppText.Bold" parent="AppText">
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+    </style>
+
+    <style name="AppText.Italic" parent="AppText">
+        <item name="android:fontFamily">@font/noto_sans_italic</item>
+    </style>
+
+    <style name="AppText.Medium" parent="AppText">
+        <item name="android:fontFamily">@font/noto_sans_medium</item>
+    </style>
+
+    <style name="AppText.Light" parent="AppText">
+        <item name="android:fontFamily">@font/noto_sans_light</item>
+    </style>
+
+    <style name="AppText.SemiBold" parent="AppText">
+        <item name="android:fontFamily">@font/noto_sans_semibold</item>
+    </style>
+
+    <style name="AppText.Title" parent="AppText">
+        <item name="android:fontFamily">@font/orbitron_medium</item>
+    </style>
+    <!--endregion-->
+
+    <!--region EditText-->
+    <style name="AppEditText" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/text_regular</item>
+        <item name="android:textColorHint">@color/textHintColor</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="AppEditText.Regular" parent="AppEditText">
+        <item name="android:fontFamily">@font/noto_sans_regular</item>
+    </style>
+
+    <style name="AppEditText.Bold" parent="AppEditText">
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+    </style>
+
+    <style name="AppEditText.Italic" parent="AppEditText">
+        <item name="android:fontFamily">@font/noto_sans_italic</item>
+    </style>
+
+    <style name="AppEditText.Medium" parent="AppEditText">
+        <item name="android:fontFamily">@font/noto_sans_medium</item>
+    </style>
+
+    <style name="AppEditText.Light" parent="AppEditText">
+        <item name="android:fontFamily">@font/noto_sans_light</item>
+    </style>
+
+    <style name="AppEditText.SemiBold" parent="AppEditText">
+        <item name="android:fontFamily">@font/noto_sans_semibold</item>
+    </style>
+    <!--endregion-->
+</resources>
