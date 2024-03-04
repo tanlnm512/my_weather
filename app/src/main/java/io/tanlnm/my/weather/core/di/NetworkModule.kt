@@ -8,6 +8,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import io.tanlnm.my.weather.BuildConfig
+import io.tanlnm.my.weather.core.utils.HeaderInterceptor
 import okhttp3.Cache
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -45,7 +46,7 @@ object NetworkModule {
     fun provideOkHttpClient(
         cache: Cache,
         logging: HttpLoggingInterceptor,
-        headerInterceptor: Interceptor
+        headerInterceptor: HeaderInterceptor
     ): OkHttpClient = OkHttpClient.Builder().apply {
         connectTimeout(CONNECT_TIMEOUT, TimeUnit.SECONDS)
         readTimeout(READ_TIMEOUT, TimeUnit.SECONDS)
