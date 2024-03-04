@@ -13,7 +13,7 @@ import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
 
 abstract class MVIViewModel<C : ICommand, S : IState, E : IEffect> : ViewModel() {
-    private val _state = MutableStateFlow<IState>(InitialState)
+    protected val _state = MutableStateFlow<IState>(InitialState)
     val state: Flow<IState> = _state.asStateFlow()
 
     private val _command = MutableSharedFlow<C>()
