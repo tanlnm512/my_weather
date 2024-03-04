@@ -14,4 +14,11 @@ interface WeatherApi {
         @Query("units") units: String,
         @Query("appid") apiKey: String,
     ): Weather
+
+    @GET("data/2.5/weather")
+    suspend fun searchWeatherByCityId(
+        @Query("id") cityId: String,
+        @Query("units") units: String,
+        @Query("appid") apiKey: String,
+    ): Weather
 }

@@ -21,4 +21,14 @@ class WeatherRepositoryImpl @Inject constructor(
         }
     }
 
+    override fun searchWeatherByCityId(id: String, units: String) = flow {
+        try {
+            val result = weatherApi.searchWeatherByCityId(id, units, BuildConfig.API_KEY)
+            emit(Result.success(result))
+        } catch (e: Exception) {
+            Timber.e(e)
+            emit(Result.failure(e))
+        }
+    }
+
 }

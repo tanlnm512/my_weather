@@ -16,23 +16,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/etSearch"
+    <TextView
+        android:id="@+id/tvSearch"
         style="@style/AppEditText.Medium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/space_large"
         android:layout_marginTop="@dimen/space_regular"
         android:background="@drawable/view_search"
-        android:drawableStart="@drawable/ic_search"
         android:drawablePadding="@dimen/space_small"
         android:hint="@string/home_search_hint"
-        android:imeOptions="actionSearch"
-        android:inputType="text"
-        android:maxLines="1"
         android:padding="@dimen/space_regular"
         android:textColorHint="@color/textHintColor"
+        app:drawableStartCompat="@drawable/ic_search"
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_xlarge"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/home_loading" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -42,5 +53,5 @@
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSearch" />
+        app:layout_constraintTop_toBottomOf="@+id/tvSearch" />
 </androidx.constraintlayout.widget.ConstraintLayout>
