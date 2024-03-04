@@ -53,6 +53,7 @@ class SearchFragment :
                 }
             }
         )
+        binding.recyclerView.adapter = adapter
     }
 
     override fun initAction() {
