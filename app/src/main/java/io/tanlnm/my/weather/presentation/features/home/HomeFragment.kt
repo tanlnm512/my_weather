@@ -34,8 +34,8 @@ class HomeFragment : MVIFragment<HomeViewModel, FragmentHomeBinding>(FragmentHom
             onBind = { rowView, _ ->
                 val (itemBinding, data) = rowView.row
                 itemBinding.tvCity.text = data.name
-                itemBinding.tvTemp.text = data.mainInfo.temp.toInt().toString()
-                itemBinding.tvFeels.text = data.mainInfo.feelsLike.toInt().toString()
+                itemBinding.tvTemp.text = "Temp: %d".format(data.mainInfo.temp.toInt())
+                itemBinding.tvFeels.text = "Real feels: %d".format(data.mainInfo.feelsLike.toInt())
             }
         )
         binding.recyclerView.adapter = adapter
