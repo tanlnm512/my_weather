@@ -51,6 +51,7 @@ class HomeFragment : MVIFragment<HomeViewModel, FragmentHomeBinding>(FragmentHom
         super.subscribeUI()
         getNavigationResult<Weather?>(R.id.homeFragment, SearchFragment.POP_BACK_WEATHER) {
             it?.let { weather ->
+                binding.emptyView.visibility = View.GONE
                 weathers.add(weather)
                 adapter.submitList(weathers)
             }
